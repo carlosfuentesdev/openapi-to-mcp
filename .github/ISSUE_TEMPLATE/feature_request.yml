@@ -1,0 +1,38 @@
+name: Feature request
+description: Propose new mapping support, a transport, or a CLI option.
+title: "[feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The most useful proposals come with a concrete spec the feature would
+        handle. A real-world example is worth a lot.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: What can't you map or do today?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - New request-body content type (multipart, form-urlencoded)
+        - External $ref resolution
+        - HTTP/SSE transport
+        - Response formatting
+        - CLI / config ergonomics
+        - Codegen
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: How should it work? A spec fragment or example helps.
+    validations:
+      required: true

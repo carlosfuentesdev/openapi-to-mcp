@@ -1,0 +1,74 @@
+{
+  "name": "@karlangas12/openapi-to-mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Turn any OpenAPI 3.x spec into a live Model Context Protocol (MCP) server: every endpoint becomes a validated tool your AI agent can call.",
+  "license": "MIT",
+  "author": "Karlangas12",
+  "homepage": "https://github.com/Karlangas12/openapi-to-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karlangas12/openapi-to-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Karlangas12/openapi-to-mcp/issues"
+  },
+  "keywords": [
+    "openapi",
+    "swagger",
+    "mcp",
+    "model-context-protocol",
+    "openapi-to-mcp",
+    "ai",
+    "agent",
+    "tools",
+    "claude",
+    "cursor",
+    "json-rpc",
+    "zod",
+    "codegen",
+    "developer-tools",
+    "llm"
+  ],
+  "bin": {
+    "openapi-to-mcp": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepack": "npm run build",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build"
+  },
+  "dependencies": {
+    "yaml": "^2.6.1",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

@@ -1,0 +1,71 @@
+name: Bug report
+description: Report a spec that doesn't map correctly, or any other bug.
+title: "[bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing a report. **If this is a security vulnerability, do
+        NOT use this form** — see [SECURITY.md](../blob/main/.github/SECURITY.md)
+        for private disclosure.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+      placeholder: The tool for POST /pets didn't include the request body…
+    validations:
+      required: true
+  - type: textarea
+    id: spec
+    attributes:
+      label: Minimal spec fragment
+      description: The smallest OpenAPI snippet that reproduces it. Redact secrets.
+      render: yaml
+    validations:
+      required: false
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Spec parsing (JSON/YAML)
+        - Tool naming
+        - Schema → Zod conversion
+        - inputSchema (tools/list)
+        - HTTP request mapping (path/query/header/body)
+        - MCP protocol / stdio
+        - CLI
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: openapi-to-mcp version
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: node
+    attributes:
+      label: Node.js version
+      placeholder: "v22.x (run: node --version)"
+    validations:
+      required: true
+  - type: input
+    id: client
+    attributes:
+      label: MCP client
+      placeholder: "Claude Desktop / Cursor / Claude Code / other"
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Paste error output. **Redact any real credentials first.**
+      render: shell
+    validations:
+      required: false

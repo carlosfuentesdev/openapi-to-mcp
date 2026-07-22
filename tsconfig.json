@@ -1,0 +1,32 @@
+{
+  // Comprobación de tipos del activo: cubre `src/` y `tests/`. El build de
+  // publicación usa `tsconfig.build.json`, que sólo emite `src/` a `dist/`.
+  //
+  // El núcleo de la fábrica (`telemetry`, `utils`) viaja vendorizado dentro de
+  // `src/core/` y `src/utils/`, de modo que el activo es autocontenido y compila
+  // sin depender del monorrepo de origen.
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": ["node"],
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "exactOptionalPropertyTypes": true,
+    "useUnknownInCatchVariables": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "sourceMap": true,
+    "noEmit": true
+  },
+  "include": ["src/**/*.ts", "tests/**/*.ts"]
+}
