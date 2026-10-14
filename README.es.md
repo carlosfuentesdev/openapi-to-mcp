@@ -7,7 +7,7 @@ Apúntalo a una spec (fichero o URL) y cada endpoint se vuelve una herramienta
 validada que tu agente de IA puede invocar — sin código pegamento, sin escribir
 un servidor por cada API.
 
-[![CI](https://github.com/Karlangas12/openapi-to-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/Karlangas12/openapi-to-mcp/actions/workflows/ci.yml)
+[![CI](https://github.com/carlosfuentesdev/openapi-to-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/carlosfuentesdev/openapi-to-mcp/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/@karlangas12/openapi-to-mcp?color=cb3837&logo=npm)](https://www.npmjs.com/package/@karlangas12/openapi-to-mcp)
 [![tests](https://img.shields.io/badge/tests-32%20passing-brightgreen)](#pruebas)
 [![node](https://img.shields.io/badge/node-%E2%89%A520-brightgreen)](https://nodejs.org)

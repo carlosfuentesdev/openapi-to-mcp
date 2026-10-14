@@ -12,7 +12,7 @@ reproduces it. Edge cases in schema conversion are where this tool lives or dies
 ## Getting started
 
 ```bash
-git clone https://github.com/Karlangas12/openapi-to-mcp.git
+git clone https://github.com/carlosfuentesdev/openapi-to-mcp.git
 cd openapi-to-mcp
 npm ci
 npm test

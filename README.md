@@ -6,7 +6,7 @@
 Point it at a spec (file or URL) and every endpoint becomes a validated tool your
 AI agent can call — no glue code, no per-API server to write.
 
-[![CI](https://github.com/Karlangas12/openapi-to-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/Karlangas12/openapi-to-mcp/actions/workflows/ci.yml)
+[![CI](https://github.com/carlosfuentesdev/openapi-to-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/carlosfuentesdev/openapi-to-mcp/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/@karlangas12/openapi-to-mcp?color=cb3837&logo=npm)](https://www.npmjs.com/package/@karlangas12/openapi-to-mcp)
 [![tests](https://img.shields.io/badge/tests-32%20passing-brightgreen)](#testing)
 [![node](https://img.shields.io/badge/node-%E2%89%A520-brightgreen)](https://nodejs.org)

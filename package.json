@@ -4,14 +4,14 @@
   "type": "module",
   "description": "Turn any OpenAPI 3.x spec into a live Model Context Protocol (MCP) server: every endpoint becomes a validated tool your AI agent can call.",
   "license": "MIT",
-  "author": "Karlangas12",
-  "homepage": "https://github.com/Karlangas12/openapi-to-mcp#readme",
+  "author": "Carlos Fuentes Navarro",
+  "homepage": "https://github.com/carlosfuentesdev/openapi-to-mcp#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Karlangas12/openapi-to-mcp.git"
+    "url": "git+https://github.com/carlosfuentesdev/openapi-to-mcp.git"
   },
   "bugs": {
-    "url": "https://github.com/Karlangas12/openapi-to-mcp/issues"
+    "url": "https://github.com/carlosfuentesdev/openapi-to-mcp/issues"
   },
   "keywords": [
     "openapi",

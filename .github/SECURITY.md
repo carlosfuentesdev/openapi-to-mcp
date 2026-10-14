@@ -17,7 +17,7 @@ disclosure before a fix puts every user at risk.
 
 Report privately through **GitHub's private vulnerability reporting**:
 
-1. Go to the [**Security** tab](https://github.com/Karlangas12/openapi-to-mcp/security)
+1. Go to the [**Security** tab](https://github.com/carlosfuentesdev/openapi-to-mcp/security)
    of this repository.
 2. Click **Report a vulnerability**.
 3. Describe the issue, the affected version, and a reproduction if you have one.
